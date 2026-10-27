@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #18202b;
+    background: #3c0606;
+    line-height: 1.6;
+}
+
+.container {
+    width: 75%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.navbar {
+    height: 60px;
+    background: #ffffff;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.nav-inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+nav a:hover {
+    color: #1769e0;
+}
+
+
+/* HERO */
+
+.hero {
+    padding: 65px 0;
+    background: #ffffff;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.35fr 0.85fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    color: #1769e0;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.hero-text > p:not(.tagline) {
+    font-size: 13px;
+    color: #4d5661;
+    max-width: 650px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 9px 16px;
+    background: #286be0;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.profile-card {
+    background: #f4f5f7;
+    border: 1px solid #e5e6e8;
+    border-radius: 8px;
+    padding: 22px;
+    text-align: center;
+}
+
+.profile-card h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.profile-card p {
+    color: #5d6570;
+    font-size: 12px;
+}
+
+
+/* SECTIONS */
+
+.section {
+    padding: 55px 0;
+}
+
+.light {
+    background: #fafbfc;
+}
+
+.gray {
+    background: #f4f5f7;
+}
+
+.centered {
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: #69717c;
+    margin-bottom: 28px;
+}
+
+.bio-text {
+    max-width: 700px;
+    margin: auto;
+    color: #4d5661;
+    font-size: 12px;
+}
+
+.bio-text p {
+    margin-bottom: 14px;
+}
+
+
+/* PORTFOLIO */
+
+.cards {
+    display: grid;
+    gap: 16px;
+}
+
+.three {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    background: white;
+    border: 1px solid #e4e6e9;
+    border-radius: 6px;
+    padding: 18px;
+    text-align: left;
+}
+
+.card h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 11px;
+    color: #5b636d;
+}
+
+
+/* SKILLS */
+
+.skills-layout {
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    gap: 16px;
+    text-align: left;
+}
+
+.technical h4 {
+    color: #2165c9;
+    font-size: 12px;
+    margin: 14px 0 7px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags span {
+    padding: 6px 12px;
+    border: 1px solid #dce0e5;
+    border-radius: 18px;
+    background: #fafbfc;
+    font-size: 11px;
+    color: #4f5863;
+}
+
+.languages > p {
+    margin-bottom: 10px;
+}
+
+.language-box {
+    background: #f7f8fa;
+    border: 1px solid #e1e3e6;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 4px;
+}
+
+.language-box strong,
+.language-box small {
+    display: block;
+}
+
+.language-box strong {
+    font-size: 11px;
+}
+
+.language-box small {
+    font-size: 10px;
+    color: #737b85;
+}
+
+
+/* CONTACT */
+
+.contact-section {
+    padding-bottom: 65px;
+}
+
+.contact-card {
+    width: 55%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #e3e5e8;
+    border-radius: 6px;
+    font-size: 11px;
+}
+
+.contact-card p {
+    margin: 7px 0;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 12px;
+    border-top: 1px solid #e2e3e5;
+    color: #69717a;
+    font-size: 10px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .hero-content,
+    .skills-layout,
+    .three {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 45px 0;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    .contact-card {
+        width: 90%;
+    }
+}
